@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>更多</title>
+    <link rel="stylesheet" href="./css/more.css">
+    <link rel="shortcut icon" href="./图标.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="allblock">
+        <div class="first_page">
+            <div class="top_title">
+                <div class="top_button"><a href="./首页.html">HOME</a></div>
+                <div class="top_button"><a href="./博客.html">BLOG</a></div>
+                <div class="top_button"><a href="./我.html">ICY</a></div>
+                <div class="top_button"><a href="./关于.html">ABOUT</a></div>
+                <div class="top_button"><a href="./更多.html">MORE</a></div>
+            </div>
+            <div class="more_block">
+                <div class="message">
+                    <span class="message_show">留下你的足迹</span>
+                    <textarea class="message_data"></textarea>
+                    <p class="btn_put">
+                        <!--<a href="./color_egg.html">-->提交</a></p>
+                </div>
+                <div class="new_things">
+                    <p>更新预知</p>
+                    <p>此版本为第一版，很有可能为最后一版^>^</p>
+                    <p>技术水平有限，下一版本变化其实不会太大</p>
+                    <p>图片字体会优化</p>
+                    <p>网站的配色会优化</p>
+                    <p>网站的文案也会换一下，毕竟心情是会变的，虽然也没有几个人会看，努力努力再努力</p>
+                    <p>博客其实技术性太重，我想逐渐将自己的一些理解和心得展示给大家，毕竟这是一个个人网站，博客csdn上有的是</p>
+                    <p>下一版本再见，谢谢您能看到这，你辛苦了^/^(啊哈哈哈)</p>
+                    <p>最后，您的支持是我前进的动力，欢迎邮箱或csdn留言交流，让我变得更好！</p>
+                    <p>再多余一句，网站还有很大的问题，比如留言板的确不能让我很满意，实现理想的功能真的好难，努力吧（互勉！）</p>
+                    <p>2019.2.10</p>
+                    <p>最后多余几句，本网站所有均为原创，且仅纪念自己的时光，抄袭可耻！！！</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="next_page">
+            <p>未来还未来</p>
+            <div class="bottom_title"></div>
+            <div class="bottom_img"><img src="./img/bottom5.png" alt=""></div>
+        </div>
+    </div>
+    <script>
+        var btn_put = document.getElementsByClassName('btn_put')[0];
+        window.requestAnimate = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                function (callback) {
+                    setTimeout(callback, 1000 / 60);
+                }
+        })();
+        btn_put.addEventListener('click', function () {
+            // console.log(1);
+            alert('万分感谢    彩蛋降临');
+            // console.log(alert);
+            var count = 0;
+            (function loop() {
+                window.requestAnimate(loop);
+                count++;
+                if (count >= 50) {
+                    count = null;
+                    self.location='./color_egg.html';
+                }
+
+            })();
+        })
+        console.log("( ⊙ o ⊙ )一定是特殊的缘分");
+        console.log("让你我相遇");
+        console.log("[██▓▒░]2019好运加载中");
+    </script>
+</body>
+
+</html>

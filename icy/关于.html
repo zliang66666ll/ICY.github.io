@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="shortcut icon" href="./图标.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="allblock">
+        <div class="first_page">
+            <div class="top_title">
+                <div class="top_button"><a href="./首页.html">HOME</a></div>
+                <div class="top_button"><a href="./博客.html">BLOG</a></div>
+                <div class="top_button"><a href="./我.html">ICY</a></div>
+                <div class="top_button"><a href="./关于.html">ABOUT</a></div>
+                <div class="top_button"><a href="./更多.html">MORE</a></div>
+            </div>
+            <div class="introduce">
+                <div><span class="introduce_data">想进一步与我交流交流? </span></div>
+                <div><span class="introduce_data">微信 </span></div>
+                <div><span class="introduce_data">QQ </span></div>
+                <div><span class="introduce_data">CSDN博客 </span></div>
+                <div><span class="introduce_data">邮箱 </span></div>
+            </div>
+            <div class="history_this">
+                <div>
+                    <p>映照自己内心的呼唤，将老师布置的博客网站改为了个人网站，虽然说看起来差不多，
+                        但是的却想起来不太一样，因为侧重点的不同，我需要更加考虑网站的整体感觉和布局以及后期的
+                        更新。由于是第一次独立自主的建站，所以有好多地方存在着不小的问题，对于后台也不是很熟悉，
+                        所以，没有压力，但兴趣是驱使我做着一切的源泉。
+                        这个网站的观感和我喜欢的类型相同（至少配色是），没有典雅的灰黑，没有姹紫嫣红，没有金碧辉煌。
+                        多彩但不妖艳，淡雅而不高冷。我通过这个网站，与自己对话，我想要在实现完成网站的同时，纪念自己！
+                    </p>
+                    
+                            <p>作为一个大二学生，首先感谢学校，感谢老师的帮助，让我能系统的学习知识。真的很想把这个网站做好，不论有没有人去看，
+                            也不在意别人的眼光，就像我网站的主旨，未来还未来。能把自己的情绪转化为一个具体的东西不得不说让人感到兴奋。其实我直到现在还
+                            很迷茫，还在试探自己走的路。未来以一片迷茫，但哪又有什么不好呢，至少还有无限的可能，无垠的未来~~
+                        </p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="next_page">
+            <p>未来还未来</p>
+            <div class="bottom_title"></div>
+            <div class="bottom_img"><img src="./img/bottom4.png" alt=""></div>
+            
+        </div>
+    </div>
+    <script>
+        var num = window.innerHeight;
+        var first_page = document.getElementsByClassName('first_page')[0];
+        var introduce_data = document.getElementsByClassName('introduce_data');
+        console.log(introduce_data);
+        var data = ['嘻嘻，啊哈哈哈 ', '想的美，怎么能这么轻而易举告诉你呢？ ', '其实呢，我现在已经不太用QQ了 ',
+            '好啦，我其实还是个挺喜欢写博客的人，<a href="https://blog.csdn.net/ICY___">https://blog.csdn.net/ICY___</a> ', '<a href="mailto:zhang2010liang999@163.com">zhang2010liang999@163.com</a>'
+        ];
+        // <a href="mailto:zhang2010laing999@163.com>
+        var data2=['想进一步与我交流交流? ','微信 ','QQ ','CSDN博客 ','邮箱 '];
+        for (var i = 0; i < introduce_data.length; i++) {
+            introduce_data[i].index = i;
+            
+                introduce_data[i].onclick = function () {
+                    introduce_data[this.index].innerHTML = data2[this.index]+'：'+data[this.index];
+                }
+            
+             
+                introduce_data[i].onmouseleave = function () {
+                    introduce_data[this.index].innerHTML = data2[this.index];
+                }
+            
+
+        }
+        // console.log(introduce_data.innerHTML);
+        first_page.style.height = num + 'px';  
+        console.log("( ⊙ o ⊙ )一定是特殊的缘分");
+        console.log("让你我相遇");
+        console.log("[██▓▒░]2019好运加载中");
+    </script>
+</body>
+
+</html>
