@@ -96,10 +96,13 @@ body {
     overflow: hidden;
     width: 80%;
     height: auto;
-    border: 1px solid #BEFAF6;
+    /* border: 1px solid #BEFAF6; */
     margin: 0 auto;
 }
 
+.log_content{
+    padding: 15px;
+}
 .data_log>div {
     width: 85%;
     border: 3px inset rgba(117, 161, 167, 0.418);
