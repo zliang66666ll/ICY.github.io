@@ -28,14 +28,15 @@ body,html{
     border: 5px inset rgba(178, 255, 250, 0.479);
     margin-left: 50%;
     left:-90px; 
-    width: 190px;
-    height: 80px;
+    width: 160px;
+    height: 60px;
     text-align: center;
-    border-radius: 15px;
-    line-height: 70px;
-    font-size: 18px;
+    border-radius: 8px;
+    line-height: 50px;
+    font-size: 15px;
     box-sizing: border-box;
     transition: all .7s ease-in-out .2s;
+    font-weight: lighter;
 }
 body:hover .btn_show{
     top: 80%;
@@ -43,16 +44,16 @@ body:hover .btn_show{
 .btn_show>a {
     text-decoration: none;
     text-align: center;
-    color: rgba(255, 255, 255, 0.795);
+    color: rgba(134, 108, 108, 0.795);
 }
 
 .btn_show:hover {
-    border: 3px outset rgba(184, 47, 47, 0.993);
+    border: 3px outset rgba(180, 176, 176, 0.993);
     color: rgba(0, 0, 0, 0.712);
-    font-size: 20px;
-    background-color:  rgba(248, 123, 144, 0.562);
+    font-size: 17px;
+    background-color:  rgba(253, 244, 245, 0.562);
 }
 
 .btn_show>a:hover {
-    color: rgb(236, 56, 56);
+    color: rgb(201, 135, 135);
 }

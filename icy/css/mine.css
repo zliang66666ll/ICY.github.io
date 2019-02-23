@@ -12,7 +12,7 @@ body {
     height: auto;
     background-color: #F4F6F2;
     
-    background-image: url(../img/personal.png);
+    background-image: url(../img/personal.jpg);
 }
 .top_title {
     position: relative;
@@ -172,7 +172,7 @@ body {
     /* background-position: 20%; */
 }
 .mine_block>div:nth-child(5)>div{
-    background-image: url(../img/mine_3.jpg);
+    background-image: url();
     border: none;
     /* background-position: 20%; */
 }

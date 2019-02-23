@@ -102,6 +102,7 @@ body {
 }
 
 .data_log>div {
+    padding: 15px;
     width: 85%;
     height: 100px;
     border: 3px inset rgba(117, 161, 167, 0.418);
