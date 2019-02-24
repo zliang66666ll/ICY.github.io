@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>更多</title>
-    <link rel="stylesheet" href="./css/more.css">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:768px)" href="./css/mobil_more.css" />
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="./css/more.css">
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
 </head>
 
@@ -62,6 +62,7 @@
                 }
         })();
         btn_put.addEventListener('click', function () {
+            if(window.innerWidth>769){
             // console.log(1);
             alert('万分感谢    彩蛋降临');
             // console.log(alert);
@@ -75,6 +76,7 @@
                 }
 
             })();
+        }
         })
         console.log("( ⊙ o ⊙ )一定是特殊的缘分");
         console.log("让你我相遇");
