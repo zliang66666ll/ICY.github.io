@@ -106,6 +106,14 @@
     canvas.onmousemove = function (e) {
         var x = e.pageX;
         var y = e.pageY;
+        console.log(x);
+        createBall(x, y);
+    }
+    canvas.ontouchmove = function (e) {
+        // console.log(1);
+        // console.log(e.clientX);
+        var x = e.touches[0].clientX;
+        var y = e.touches[0].clientY;
         // console.log(x);
         createBall(x, y);
     }
