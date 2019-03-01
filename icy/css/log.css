@@ -96,7 +96,7 @@ body {
 .data_log {
     overflow: hidden;
     width: 80%;
-    height: 1200px;
+    height: auto;
     /* border: 1px solid #BEFAF6; */
     margin: 0 auto;
 }
@@ -126,7 +126,7 @@ body {
     height: 40px !important;
     background-color: rgb(148, 148, 148);
     border-radius: 20%;
-    left: 45%;
+    left: 43%;
 
 }
 
@@ -149,7 +149,7 @@ body {
     height: 40px !important;
     background-color: rgb(148, 148, 148);
     border-radius: 20%;
-    left: 46%;
+    left: 45%;
 }
 
 .button_log_right:hover {
